@@ -1,0 +1,84 @@
+1. Learning to Compose Neural Networks for Question Answering
+Authors: Jacob Andreas, MarcusRohrbach, Trevor Darrell, Dan Klein
+Institute: Department ofElectrical Engineering and Computer Sciences
+University of California, Berkeley
+KeyWords: Question Answering
+ 
+2. Text understanding with the attention sum reader network
+Authors: Rudolf Kadlec, MartinSchmid, Ondrej Bajgar, Jan Kleindienst
+Institute: IBM Watson
+KeyWords: Machine Reading Comprehension
+ 
+3. Improving Information Extraction by Acquiring External Evidence withReinforcement Learning
+Authors: Karthik Narasimhan,Adam Yala, Regina Barzilay
+Institute: CSAIL, MIT
+KeyWords: Information Extraction; Reinforcement Learning
+ 
+4: Pointing the Unknown Words
+Authors: Caglar Gulcehre,Sungjin Ahn, Ramesh Nallapati, Bowen Zhou, Yoshua Bengio
+Institute: Universite de Montreal; IBM T.J. Watson Research
+CIFAR Senior Fellow
+KeyWords: Unknown Words
+ 
+5. Sequence-to-Sequence Learning as Beam-Search Optimization
+Authors: Sam Wiseman, Alexander M. Rush
+Institute: School of Engineeringand Applied Sciences, Harvard University
+KeyWords: Seq2Seq; Beam Search
+ 
+6. SQuAD: 100,000+ Questions for Machine Comprehension of Text
+Authors: Pranav Rajpurkar, JianZhang, Konstantin Lopyrev, Percy Liang
+Institute: Computer ScienceDepartment
+Stanford University
+KeyWords: Machine Reading Comprehension; Dataset
+ 
+7. End-to-End Reinforcement Learning of Dialogue Agents for Information Access
+Authors: Bhuwan Dhingra, LihongLi, Xiujun Li, Jianfeng Gao, Yun-Nung Chen, Faisal Ahmed, Li Deng
+Institute: School of ComputerScience, Carnegie Mellon University
+Microsoft Research
+National Taiwan University
+KeyWords: Reinforcement Learning; Dialogue System
+ 
+8. ReasoNet: Learning to Stop Reading in Machine Comprehension
+Authors: Yelong Shen, Po-SenHuang, Jianfeng Gao, Weizhu Chen
+Institute: Microsoft ResearchRedmond
+KeyWords: Machine Reading Comprehension
+ 
+9. Personalizing a Dialogue System with Transfer Learning
+Authors: Kaixiang Mo, ShuangyinLi, Yu Zhang, Jiajun Li, Qiang Yang
+Institute: The Hong Kong University of Science and Technology
+KeyWords: Dialogue System;Transfer Learning
+ 
+10. Light RNN Memory and Computation-Efficient Recurrent Neural Network
+Authors: Xiang Li, Tao Qin, JianYang, Tie-Yan Liu
+Institute: Nanjing University of Science and Technology
+Microsoft Research Asia
+KeyWords: New Recurrent Neural Network
+ 
+11. Dual Learning for Machine Translation
+Authors: Yingce Xia, Di He, TaoQin, Liwei Wang, Nenghai Yu, Tie-Yan Liu, Wei-Ying Ma
+Institute: University of Scienceand Technology of China
+Key Laboratory of Machine Perception (MOE), School of EECS, Peking University
+Microsoft Research
+KeyWords: Dual Learning; NeuralMachine Translation
+ 
+12. Neural Machine Translation with Reconstruction
+Authors: Zhaopeng Tu, Yang Liu,Lifeng Shang, Xiaohua Liu, Hang Li
+Institute: Noah’s Ark Lab, Huawei Technologies
+Department of Computer Science and Technology, Tsinghua University
+KeyWords: Neural Machine Translation
+ 
+13. Linguistically Regularized LSTMs for Sentiment Classification
+Authors: Qiao Qian, Minlie Huang, Xiaoyan Zhu
+Institute: State Key Lab. of Intelligent Technology and Systems, National Lab. for Information Science and Technology
+Dept. of Computer Science and Technology, Tsinghua University
+KeyWords: Sentiment Classification; LSTM
+ 
+14. Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation
+Authors: Melvin Johnson, MikeSchuster, Quoc V. Le, Maxim Krikun, Yonghui Wu, Zhifeng Chen, Nikhil Thorat,Fernanda Viégas, Martin Wattenberg, Greg Corrado, Macduff Hughes, Jeffrey Dean
+Institute: Google
+Keywords: Multilingual Neural MachineTranslation; Zero-Shot
+ 
+15. Language Modeling with Gated Convolutional Networks
+Authors: Yann N. Dauphin, AngelaFan, Michael Auli, David Grangier
+Institute: Facebook AI Research
+KeyWords: Language Modeling; Gated CNN
