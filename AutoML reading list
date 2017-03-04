@@ -16,13 +16,20 @@ https://dspace.mit.edu/bitstream/handle/1721.1/107031/971493308-MIT.pdf?sequence
 [3] J. Bergstra, R. Bardenet, Y. Bengio, and B. K´egl. Algorithms for hyper-parameter optimization. InProc.of NIPS’11, pages 2546–2554, 2011.
 [4] J. Snoek, H. Larochelle, and R. P. Adams. Practical Bayesian optimization of machine learning algorithms.InProc. of NIPS’12, pages 2960–2968, 2012.
 [5] K. Eggensperger, M. Feurer, F. Hutter, J. Bergstra, J. Snoek, H. Hoos, and K. Leyton-Brown.  Towardsan empirical foundation for assessing Bayesian optimization of hyperparameters. InNIPS Workshop onBayesian Optimization in Theory and Practice, 2013.
-[6] P. Brazdil, C. Giraud-Carrier, C. Soares, and R. Vilalta.Metalearning:  Applications to Data Mining.Springer, 2009.
-[7] R. Bardenet, M. Brendel, B. K´egl, and M. Sebag.  Collaborative hyperparameter tuning.  InProc. ofICML’13[28], pages 199–207.
+[6] P. Brazdil, C. Giraud-Carrier, C. Soares, and R. Vilalta. Metalearning: Applications to Data Mining.Springer, 2009.
+> This is a book
+
+[7] R. Bardenet, M. Brendel, B. K´egl, and M. Sebag. Collaborative hyperparameter tuning.  InProc. of ICML’13[28], pages 199–207.
 [8] D. Yogatama and G. Mann. Efficient transfer learning method for automatic hyperparameter tuning. InProc. of AISTATS’14, pages 1077–1085, 2014
-[9] A. Kalousis.Algorithm Selection via Meta-Learning. PhD thesis, University of Geneve, 2002.
+[9] A. Kalousis. Algorithm Selection via Meta-Learning. PhD thesis, University of Geneve, 2002.
 [10] A. Lacoste, M. Marchand, F. Laviolette, and H. Larochelle. Agnostic Bayesian learning of ensembles. InProc. of ICML’14, pages 611–619, 2014.
-[11] Y. Bengio. Gradient-based optimization of hyperparam-eters.Neural Computation, 12(8):1889–1900, 2000.
-[12] J. Bergstra, R. Bardenet, Y. Bengio, and B. Kégl. Algo-rithms for Hyper-Parameter Optimization. InProc. ofNIPS-11, 2011
+# [11] Y. Bengio. Gradient-based optimization of hyper-parameters. Neural Computation, 12(8):1889–1900, 2000.
+
+[12] J. Bergstra, R. Bardenet, Y. Bengio, and B. Kégl. Algorithms for Hyper-Parameter Optimization. InProc. ofNIPS-11, 2011
+> This article covers sequential model-based optimization, the expected improvement criterion, the Gaussian Process based 
+> hyper-parameter optimization algorithm, and a second approach based on adaptive Parzen windows. 
+> The article also shows the efficiency of sequential optimization on the two hardest datasets according to random search.
+
 [13] J. Bergstra and Y. Bengio. Random search for hyper-parameter optimization.JMLR, 13:281–305, 2012.
 [14] A. Frank and A. Asuncion. UCI machine learning repos-itory, 2010. URL: http://archive.ics.uci.edu/ml. Uni-versity of California, Irvine, School of Information andComputer Sciences.
 [15] Hydra:Automatically configuring algorithms for portfolio-basedselection
