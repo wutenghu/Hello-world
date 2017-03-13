@@ -1,19 +1,56 @@
-Hyperparameter Sapce Exploration
+Part A: Neural network hyper-parameters
+> Mini-Batch Gradient Descent Hyper-parameters
+1. Learning-rate
 
+2. Loss-function
+
+3. Mini-batch size
+
+4. Number of training iterations
+
+5. Momentum
+
+> Model hyper-parameters
+1. Number of Hidden Units
+
+
+2. Weight Decay
+
+
+3. Activation Sparsity
+
+
+4. Non-linearity
+> Commonly used nonliearities: sigmoid; tanh; rectifier [ReLU = max(0,x)]; hard tanh; 
+> **Rectifier and step units don't make sense for the output, because of they are not
+> able to pass back error gradient into network
+
+5. Weight Initialization
+
+
+6. Random Seeds and Model Averaging
+
+
+7. Preprocessing Input Data
+
+Part B: Hyperparameter Sapce Exploration
 1. Coordinate Descent
 > Keep all parameter fixed and vary one parameter till the minimum of validation error!
 
 2. Grid Search
-> Nesting the parameter space, the computational expense is exponential in the number of parameters. 
-> Can be easily parallelized
+> Nesting the parameter space, the computational expense is exponential in the number of
+> parameters. can be easily parallelized
 
 3. Random Search
-> Avoid skip of the optimum due to the too large space step, easy to be parallelized
+> Avoid skipping the optimum of the hyper-sapce due to too large space step, easy to be
+> parallelized
 
 4. Model-based serach
-> Two major approaches have been widely employed: Bayesian optimization based on the Gaussian random process and on the 
-> tree-structured Parzen estimater. Available resources include the Hyperopt, Spearmint and SMAC packages.
+> Two major approaches have been widely employed: Bayesian optimization based on the Gaussian
+> random process and on the tree-structured Parzen estimater. Available resources include the
+> Hyperopt, Spearmint and SMAC packages.
 
+5. Reference:
 1) Practical recommendations for gradient-based training of deep architectures, 
 > Yoshua Bengio, U. Montreal, arXiv report:1206.5533, Lecture Notes in Computer 
 > Science Volume 7700, Neural Networks: Tricks of the Trade Second Edition, Editors: 
