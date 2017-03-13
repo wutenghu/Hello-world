@@ -1,1 +1,23 @@
+Hyperparameter Sapce Exploration
 
+1. Coordinate Descent
+> Keep all parameter fixed and vary one parameter till the minimum of validation error!
+
+2. Grid Search
+> Nesting the parameter space, the computational expense is exponential in the number of parameters. 
+> Can be easily parallelized
+
+3. Random Search
+> Avoid skip of the optimum due to the too large space step, easy to be parallelized
+
+4. Model-based serach
+> Two major approaches have been widely employed: Bayesian optimization based on the Gaussian random process and on the 
+> tree-structured Parzen estimater. Available resources include the Hyperopt, Spearmint and SMAC packages.
+
+1) Practical recommendations for gradient-based training of deep architectures, 
+> Yoshua Bengio, U. Montreal, arXiv report:1206.5533, Lecture Notes in Computer 
+> Science Volume 7700, Neural Networks: Tricks of the Trade Second Edition, Editors: 
+> Grégoire Montavon, Geneviève B. Orr, Klaus-Robert Müller, 2012.
+2) http://jaberg.github.io/hyperopt/
+3) https://github.com/JasperSnoek/spearmint
+4) http://www.cs.ubc.ca/labs/beta/Projects/SMAC/
