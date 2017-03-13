@@ -98,13 +98,17 @@ Part B: Hyperparameter Sapce Exploration
 [5] Colin Raffel, Stochastic optimization techniques, http://colinraffel.com/wiki/stochastic_optimization_techniques
 [6] F. Hutter, H. Hoos, and K. Leyton-Brown, Bayesian Optimization with censored response data, NIPS 2011
 [7] F. Hutter, H. Hoos, and K. Leyton-Brown, Sequential model-based optimization for general algorithm configuration, LION 2011
+*** 
 [8] F. Hutter, H. Hoos, and K. Leyton-Brown, An evaluation of sequential model-based optimization for expensive blackbox functions, LION 2013
-** sequential parameter optimziation (SPO) toolbox, SMAC's model are based on random forests 
-** in instead of the gaussian process due to the random forest method outperform over the gaussian
-** process method on the catergorical problems
-[9] M. M. Salvador, M. Budka, and B. Gabrys, Towards automatic composition of multicomponent predictive systems, HAIS 2016
+*** sequential parameter optimziation (SPO) toolbox, SMAC's model are based on random forests 
+    in instead of the gaussian process due to the random forest method outperform over the gaussian
+    process method on the catergorical problems
+[9] M.M. Salvador, M. Budka, and B. Gabrys, Towards automatic composition of multicomponent predictive systems, HAIS 2016
 [10] J. Bergstra, R. Bardenet, Y. Bengio, and B. Kegl, Algorithms for hyper-parameter optimization, NIPS 2011
 [11] J. Snoek, H. Larochelle, and R.P. Adams, Practical bayesian optimization of machine learning algorithms, NIPS 2012
 [12] K. Eggensperger, M. Feurer, and F. Hutter, Towards an empirical foundation for assessing bayesian optimization of hyper-parameters, NIPS 2013
 [13] M. Feurer, A. Klein, K. Eggensperger, J.T. Springenberg, M. Blum, and F. Hutter, Methods for improving bayesian optimization for autoML, ICML 2015
 [14] C. Thornton, F. Hutter, H.H. Hoos, and K. Leyton-Brown, Auto-WEKA: combined selection and hyperparameter optimization of classification algorithms, ACM 2013
+[15] I. Loshchilov, and F. Hutter, CMA-ES for hyperparameter optimization of deep neural networks, ICLR 2016
+[16] D.R. Jones, M. Schonlau, and W.J. Welch, Efficient global optimization of expensive black box functions. JGO 1998
+
