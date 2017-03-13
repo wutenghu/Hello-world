@@ -111,4 +111,5 @@ Part B: Hyperparameter Sapce Exploration
 [14] C. Thornton, F. Hutter, H.H. Hoos, and K. Leyton-Brown, Auto-WEKA: combined selection and hyperparameter optimization of classification algorithms, ACM 2013
 [15] I. Loshchilov, and F. Hutter, CMA-ES for hyperparameter optimization of deep neural networks, ICLR 2016
 [16] D.R. Jones, M. Schonlau, and W.J. Welch, Efficient global optimization of expensive black box functions. JGO 1998
+[17] J. Snoek, H. Larochelle, and R.P. Adams, Practical bayesian optimization of machine learning algorithm, Stat. ML 2012
 
