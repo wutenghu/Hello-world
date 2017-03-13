@@ -15,8 +15,18 @@ Part A: Neural network hyper-parameters
 > thus the size (B) can be set first and then fixed while the other hyper-parameters 
 > are optimized.
 
-> A very common technique is to "smooth" the gradient updates using a leaky integrator
-> filter with parameter beta by: g_(n+1) <- (1-beta)*g_n + beta*gradient_n
+> Stochastic Gradient Descent up-grade the model at each data feeding iteration:
+> theta_(n+1) = theta_n - eta*gradient_n
+
+> In the SGD, the gradient usually changes rapidly, one very common technique is to "smooth"
+> the gradient updates using a leaky integrator filter with parameter beta by: 
+> g_(n+1) <- miu*g_n + eta*gradient_n
+
+> In the Nesterov's Accelerated Gradient (NAG), the "acceleration" is fullfiled through 
+> applying the predicted theata to approximate the gradient, and using the approximated
+> gradient to update the theata instead of the previous gradient
+
+> Adam:
 
 4. Number of training iterations
 
