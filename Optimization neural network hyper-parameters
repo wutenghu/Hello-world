@@ -1,41 +1,57 @@
 Part A: Neural network hyper-parameters
-> Mini-Batch Gradient Descent Hyper-parameters
+>> Mini-Batch Gradient Descent Hyper-parameters
 1. Learning-rate
+> initial learning rate: epsilon_0, which is usually set ranges from 1 to 1e-6;
 
 2. Loss-function
+> Squared euclidian distance & cross-entropy
 
-3. Mini-batch size
+3. Mini-batch and stochastic optimizer (Colin Raffel)
+> First, since the dataset used is often too large to fit in memory and/or be optimized
+> efficiently; Second, the objective function is typically non-convex, so using different
+> data at each iteration can avoid the optimization stack into a local minimum
+
+> About the batch-size, due to it should not effect generalization/test performance, 
+> thus the size (B) can be set first and then fixed while the other hyper-parameters 
+> are optimized.
+
+> A very common technique is to "smooth" the gradient updates using a leaky integrator
+> filter with parameter beta by: g_(n+1) <- (1-beta)*g_n + beta*gradient_n
 
 4. Number of training iterations
 
-5. Momentum
 
-> Model hyper-parameters
-1. Number of Hidden Units
+6. Number of Hidden Units
 
 
-2. Weight Decay
+7. Weight Decay
+> A regularization is required to reduce the risk of training over-fitting, one normal
+> requirement is to encourage the sum(theata) to be small (close to zero). L1 and L2
+> regularizations (lagrange multipliers)
+
+8. Activation Sparsity
 
 
-3. Activation Sparsity
-
-
-4. Non-linearity
+9. Non-linearity
 > Commonly used nonliearities: sigmoid; tanh; rectifier [ReLU = max(0,x)]; hard tanh; 
 > **Rectifier and step units don't make sense for the output, because of they are not
 > able to pass back error gradient into network
 
-5. Weight Initialization
+10. Weight Initialization
 
 
-6. Random Seeds and Model Averaging
+11. Random Seeds and Model Averaging
 
 
-7. Preprocessing Input Data
+12. Preprocessing Input Data
+> Element-wise standarization, principal component analysis, uniformization,
+> non-linearities (logarithm or square root)
+
+13.
 
 Part B: Hyperparameter Sapce Exploration
 1. Coordinate Descent
-> Keep all parameter fixed and vary one parameter till the minimum of validation error!
+> Keep all parameters fixed and vary one parameter till the minimum of validation error!
 
 2. Grid Search
 > Nesting the parameter space, the computational expense is exponential in the number of
@@ -51,10 +67,11 @@ Part B: Hyperparameter Sapce Exploration
 > Hyperopt, Spearmint and SMAC packages.
 
 5. Reference:
-1) Practical recommendations for gradient-based training of deep architectures, 
+[1] Practical recommendations for gradient-based training of deep architectures, 
 > Yoshua Bengio, U. Montreal, arXiv report:1206.5533, Lecture Notes in Computer 
 > Science Volume 7700, Neural Networks: Tricks of the Trade Second Edition, Editors: 
 > Grégoire Montavon, Geneviève B. Orr, Klaus-Robert Müller, 2012.
-2) http://jaberg.github.io/hyperopt/
-3) https://github.com/JasperSnoek/spearmint
-4) http://www.cs.ubc.ca/labs/beta/Projects/SMAC/
+[2] http://jaberg.github.io/hyperopt/
+[3] https://github.com/JasperSnoek/spearmint
+[4] http://www.cs.ubc.ca/labs/beta/Projects/SMAC/
+[5] Colin Raffel, Stochastic optimization techniques, http://colinraffel.com/wiki/stochastic_optimization_techniques
