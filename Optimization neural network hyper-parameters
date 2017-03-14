@@ -8,23 +8,27 @@ Part A: Neural network hyper-parameters
 
 3. Mini-batch and stochastic optimizer (Colin Raffel)
 > First, since the dataset used is often too large to fit in memory and/or be optimized
-> efficiently; Second, the objective function is typically non-convex, so using different
-> data at each iteration can avoid the optimization stack into a local minimum
+  efficiently; Second, the objective function is typically non-convex, so using different
+  data at each iteration can avoid the optimization stack into a local minimum
+
+> Batch-normalization helps to eliminate the internal covariate shift of the input data 
+  during the training, which benefits the faster convergence of the optimization.
+  Ioffe & Szegedy (2015)
 
 > About the batch-size, due to it should not effect generalization/test performance, 
-> thus the size (B) can be set first and then fixed while the other hyper-parameters 
-> are optimized.
+  thus the size (B) can be set first and then fixed while the other hyper-parameters 
+  are optimized.
 
 > Stochastic Gradient Descent up-grade the model at each data feeding iteration:
-> theta_(n+1) = theta_n - eta*gradient_n
+  theta_(n+1) = theta_n - eta*gradient_n
 
 > In the SGD, the gradient usually changes rapidly, one very common technique is to "smooth"
-> the gradient updates using a leaky integrator filter with parameter beta by: 
-> g_(n+1) <- miu*g_n + eta*gradient_n
+  the gradient updates using a leaky integrator filter with parameter beta by: 
+  g_(n+1) <- miu*g_n + eta*gradient_n
 
 > In the Nesterov's Accelerated Gradient (NAG), the "acceleration" is fullfiled through 
-> applying the predicted theata to approximate the gradient, and using the approximated
-> gradient to update the theata instead of the previous gradient
+  applying the predicted theata to approximate the gradient, and using the approximated
+  gradient to update the theata instead of the previous gradient
 
 > Adam:
 
@@ -39,13 +43,28 @@ Part A: Neural network hyper-parameters
 > requirement is to encourage the sum(theata) to be small (close to zero). L1 and L2
 > regularizations (lagrange multipliers)
 
-8. Activation Sparsity
-
-
-9. Non-linearity
+8. Activation Units (activation sparsity)
 > Commonly used nonliearities: sigmoid; tanh; rectifier [ReLU = max(0,x)]; hard tanh; 
+> Both sigmoid and tanh have the vanishing gradient problem (due to the saturation when the input x is large)
+
+> ReLU helps to avoiding the saturation issue of the sigmoid and tanh approaches; ReLU is cheap in computation,
+  say it is more feasible to large scale computation; however, the ReLU's mean isnot zero, besides if you apply 
+  linear activation function in all units of your multi-layer neural network. your network behave just like a 
+  single layer MLP, it cannot learn much from your data. ** One potential hurt is the hard zero at x<0 might be
+  a barrier for propagate the gradient. In order to represent the symmetric/atisymmetric behavior of the data, a
+  rectifier-based neural network require twic as many hidden units as a network of symmetric/antisymmetric activation
+  functions.
+  
+> The training proceeds better when the artifical neurons are either off or operating mostly in a linear regime;
+  further more a rectifier units naturally leads to a sparse network, which is more similar to the biological 
+  neurons responses in their main operating regime (Lennie 2003).
+  
+> ELU function's mean value is close to zero, also it avoid the saturation problem; when the neural network has
+  depth more than 5, the ELU method surpass the ReLU, because of the ELU push the mean activation function toward
+  zero like batch-normalization but with less computation.
+
 > **Rectifier and step units don't make sense for the output, because of they are not
-> able to pass back error gradient into network
+  able to pass back error gradient into network.
 
 10. Weight Initialization
 
@@ -57,7 +76,6 @@ Part A: Neural network hyper-parameters
 > Element-wise standarization, principal component analysis, uniformization,
 > non-linearities (logarithm or square root)
 
-13.
 
 Part B: Hyperparameter Sapce Exploration
 1. Coordinate Descent
@@ -112,4 +130,11 @@ Part B: Hyperparameter Sapce Exploration
 [15] I. Loshchilov, and F. Hutter, CMA-ES for hyperparameter optimization of deep neural networks, ICLR 2016
 [16] D.R. Jones, M. Schonlau, and W.J. Welch, Efficient global optimization of expensive black box functions. JGO 1998
 [17] J. Snoek, H. Larochelle, and R.P. Adams, Practical bayesian optimization of machine learning algorithm, Stat. ML 2012
+[18] S. Koturwar, Answer to question in Quora: https://www.quora.com/How-does-ELU-activation-function-help-convergence-and-whats-its-advantages-over-ReLU-or-sigmoid-or-tanh-function
+[19] X. Glorot, A. Bordes, and Y. Bengio, Deep sparse rectifier neural network, AISTATS 2011
+[20] P. Lennie, The cost of cortical computation, Current Biology 2003
+[21] S. Ioffe, and C. Szegedy: Batch normalization: accelerating deep network training by reducing internal covariate shift, ICML 2015
+[22] D.A. Clevert, T. Unterthiner, and S. Hochreiter: Fast and accurate deep network learning by exponential linear Units, ICLR 2016
+
+
 
