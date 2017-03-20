@@ -1,1 +1,36 @@
+Part I. Construction KG
+1. Information Extraction:
+   Close Domain <--> Open IE
+   Supervised
+   Semi-supervised
+   Non-supervised
+   
+2. knowledge fusion: (review articles [35-38])
+   Schema matching VS Instance matching
+   
+3. Inference:
+   Symbol Logistic VS Statistic Inference
 
+   Statistic Inference (review articles [68-69])
+   bilinear model, translation model, graph-based model
+   
+Part II. Open-source KG
+# English knowledge graph
+1. DBpedia
+
+2. Yago
+
+3. Wikidata
+
+4. BabelNet
+
+5. ConceptNet
+
+6. Microsoft Concept Graph
+
+# Chinese knowledge graph
+7. zhishi.me
+
+8. zhishi.shema
+
+9. XLore
