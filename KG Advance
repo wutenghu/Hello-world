@@ -13,6 +13,8 @@ Part I. Construction KG
 
    Statistic Inference (review articles [68-69])
    bilinear model, translation model, graph-based model
+   Nickel et al. (2011): propose the relational learning approach RESCAL
+                         collective learning:
    
 Part II. Open-source KG
 # English knowledge graph
@@ -34,3 +36,8 @@ Part II. Open-source KG
 8. zhishi.shema
 
 9. XLore
+
+Reference:
+Nickel M, Tresp V, Kriegel H P. A Three-Way Model for Collective Learning on Multi-Relational Data.
+                                International Conference on Machine Learning, ICML 2011, Bellevue, 
+                                Washington, Usa, June 28 - July. DBLP, 2011:809-816.
