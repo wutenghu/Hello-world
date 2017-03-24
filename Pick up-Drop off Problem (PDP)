@@ -1,4 +1,4 @@
-# M. Mahmoudi and X. Zhou, Finding optimal solutions for vehicle routing problem with pickup and delivery services with time windows: dynamic programming approach based on state-space-time network representation
+#1. M. Mahmoudi and X. Zhou, Finding optimal solutions for vehicle routing problem with pickup and delivery services with time windows: dynamic programming approach based on state-space-time network representation
 > Method description: 
   state-space-time network construct, forward dynamics programming solution algorithm, Lagrangian relaxation approach, sub-gradient-based algorithm
 > Model description:
@@ -8,3 +8,5 @@
     [a_p', b_p']: arrival time window from passenger p's destination
     o_v': dummy node for vehicle v's origin
     d_v': dummy node for vehicle v's destination
+
+#2. 
