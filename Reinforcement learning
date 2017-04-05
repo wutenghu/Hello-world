@@ -1,3 +1,4 @@
+Part A: Background
 1. Basic Goal:
 #  To discover an optimal policy *pi that maps states to actions so as to maximize the expected return J
 >  myopic or greedy algorithm
@@ -16,7 +17,19 @@
 2.2  Policy search
 >  Broadly break down policy-search methods into "black box" and "white box"
 
-3. 
+3. Typical problems
+3.1  MDP vs POMDP
+>  A markov decision process is just like a Markov Chain
+>  Solving algorithms: Value Iteration Algorithm & Policy Iteration Algorithm
 
 
 
+Part B: Literature and Resource Review
+1. POMDP page: http://cs.brown.edu/research/ai/pomdp/index.html
+
+2. Google Deepmind: https://deepmind.com/blog/deep-reinforcement-learning/
+>  Natural letter: Human level control through deep reinforcement learning
+>  Atari 2600 emulator: https://stella-emu.github.io/
+
+3. Simple Reinforcement Learning with Tensorflow:
+https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0
