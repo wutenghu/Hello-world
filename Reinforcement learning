@@ -13,8 +13,10 @@ Part A:
 2.1 被动强化学习
 >  被动学习的任务类似于策略评价
 >  自动效用估计； 自适应动态规划； 时序差分学习
-2.2 主动强化学习
 
+2.2 主动强化学习
+>  Model-based: use experience to estimate the T and V functions
+>  Model-free (Q-learning and Value learning): without estimate the T and V, but to directly estimate the Value
 
 Part B: Background
 1. Basic Goal:
