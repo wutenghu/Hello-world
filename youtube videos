@@ -4,7 +4,6 @@ Machine learning - Introduction to Gaussian processes: https://www.youtube.com/w
 Machine learning - Bayesian optimization and multi-armed bandits: https://www.youtube.com/watch?v=vz3D36VXefI&t=2102s
 
 
+
 CS188 Spring 2014: Lecture 10 Reinforcement Learning I: https://www.youtube.com/watch?v=IXuHxkpO5E8
-> problems with direct evaluation:
-> good aspects: easy to understand; does not require any knowledge of T and R; eventually computes the correct average values, using just sample transitions
-> bad aspects: wastes information about state connections; each state must be learned separately; take long time to learn
+CS188 Spring 2014: Lecture 11 Reinforcement Learning II: https://www.youtube.com/watch?v=yNeSFbE1jdY&t=204s
