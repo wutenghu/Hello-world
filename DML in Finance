@@ -1,3 +1,11 @@
+#  ANN
+>  Input: (most common)
+>  open, high, low, and close prices
+>  technical indicators: SMA, EMA, RSI, ROC, MACD, ATR
+
+1> S. Hamid and Z. Iqbal, Using neural network for forecasting volatility of S&P 500 index futures prices
+   
+
 #  Reinforcement learning
 1>  Nevmyvaka, Reinforcement learning for optimized trade execution
 2>  Moody, Reinforcement learning for Trading
