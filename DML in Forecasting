@@ -1,0 +1,24 @@
+### Load demand forecasting ###
+# ANN
+>  Raza and Khosravi, A review on artificial intelligence based load demand forecasting techniques for smart grid and buildings
+
+
+### Financial data forecasting ###
+#  ANN
+>  Input: (most common)
+>  open, high, low, and close prices
+>  technical indicators: SMA, EMA, RSI, ROC, MACD, ATR
+
+>  S. Hamid and Z. Iqbal, Using neural network for forecasting volatility of S&P 500 index futures prices
+>  M. Malliaris and L. Salchenberger, Using neural network to forecast the S&P 500 implied volatility
+
+#  Reinforcement learning
+>  Nevmyvaka, Reinforcement learning for optimized trade execution
+>  Moody, Reinforcement learning for Trading
+>  use Q-Function Reinforcement Learning (QRL) algorithms for trading financial instruments, where the implementation is via the use of Deep Q-Networks (DQNs)
+>  Bertoluzzo, Making financial trading by Recurrent Reinforcement learning
+>  CS 7646: Machine Learning for Trading: https://www.omscs.gatech.edu/cs-7646-machine-learning-trading
+
+#  Resources
+>  Professor Rob J. Hyndman's personal website: http://robjhyndman.com/
+>  Exploring the boundaries of predictability: what can we forecast, and when should we give up? http://robjhyndman.com/seminars/yahoo2015/
