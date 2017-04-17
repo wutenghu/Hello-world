@@ -1,4 +1,4 @@
-Part I. Construction KG
+Part A. Construction KG
 1. Information Extraction:
    Close Domain <--> Open IE
    Supervised
@@ -15,8 +15,8 @@ Part I. Construction KG
    bilinear model, translation model, graph-based model
    Nickel et al. (2011): propose the relational learning approach RESCAL
                          collective learning:
-   
-Part II. Open-source KG
+
+Part B. Open-source KG
 # English knowledge graph
 1. DBpedia
 
@@ -36,6 +36,13 @@ Part II. Open-source KG
 8. zhishi.shema
 
 9. XLore
+
+Part C. Query Linked Data using natural language
+# Natural language question --> SPARQL
+1. Quepy: https://quepy.readthedocs.io/en/latest/index.html#
+
+# SPARQL --> search over Knowledge graph
+1. Neo4j: https://neo4j.com/
 
 Reference:
 Nickel M, Tresp V, Kriegel H P. A Three-Way Model for Collective Learning on Multi-Relational Data.
